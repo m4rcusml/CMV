@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #EFEFEF;
+}
+
+/* topo */
+header {
+  background-color: #454A4E;
+}
+header .logo {
+  background-image: url('https://www.ecoclean.cl/wp-content/uploads/2021/09/2-1-scaled.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .logo-img {
+  height: 60%;
+  opacity: .9;
+}
+.titulo {
+  padding: 2em;
+  color: white;
+}
+
+/* Main */
+.barra-pesquisa {
+  padding: 2em;
+  display: flex;
+}
+.barra-pesquisa input[type="search"] {
+  flex-grow: 1;
+  padding: 1em;
+  outline: none;
+  border-radius: 10px;
+  border: 0.5px solid #929292;
+}
+.antes-da-tabela {
+  padding: 1em;
+  margin: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: .8em;
+  background-color: #F8F3F3;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* tabela */
+table {
+  margin: 0 2em;
+  margin-bottom: 2em;
+  width: calc(100% - 4em);
+  border-collapse: collapse;
+}
+tr {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 3fr;
+  padding: 1em;
+}
+thead tr {
+  background-color: #D9D9D9;
+  border-radius: .8em;
+}
+thead tr th {
+  text-align: left;
+}
+tbody tr {
+  border-bottom: 1px solid black;
+}
+tbody td {
+  display: flex;
+  align-items: center;
+}
+
+/* botoes */
+.btn {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  border-radius: .5em;
+  border: none;
+  padding: .5em .8em;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.btn-adicionar {
+  background-color: #29DCBC;
+  padding: .25em .75em .25em .5em;
+}
+.btn-vender {
+  background-color: #3FC2AB;
+  flex-grow: 1;
+}
+.btn-alterar {
+  background-color: #EDCA50;
+  flex-grow: 1;
+}
+.btn-excluir {
+  background-color: #DB3131;
+  flex-grow: 1;
+}
+.botoes-de-acao {
+    gap: 1em;
+  }
+
+@media screen and (max-width:1024px) {
+  .botoes-de-acao {
+    gap: .5em;
+  }
+  th:nth-of-type(4),
+  td:nth-of-type(4) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  tr {
+    grid-template-columns: 100px 300px 100px 100px 300px;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .antes-da-tabela {
+    flex-direction: column;
+    gap: .5em;
+  }
+  .btn-adicionar {
+    flex-grow: 1;
+  }
+}
