@@ -11,6 +11,37 @@
       padding: 0;
       font-family: sans-serif;
     }
+    body {
+      height: 100vh;
+      display: grid;
+      grid-template-areas: "header carrinho" "detalhes carrinho";
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 80px 2fr;
+    }
+    header{
+      grid-area: header;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2em;
+      background-color: #EFEFEF;
+    }
+    .logo {
+      height: 70%;
+    }
+    .carrinho {
+      grid-area: carrinho;
+      background-color: #454A4E;
+    }
+    .carrinho h2 {
+      height: 80px;
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: normal;
+      box-shadow: 0 0 10px 0 black;
+    }
   </style>
 </head>
 
@@ -19,6 +50,12 @@
     <h1>Produtos</h1>
     <img src="assets/logo.svg" alt="Logo CMV" class="logo">
   </header>
+  <main class="detalhes">
+
+  </main>
+  <section class="carrinho">
+    <h2>Carrinho</h2>
+  </section>
 </body>
 
 </html>
