@@ -59,6 +59,10 @@ header{
   color: white;
   font-weight: bold;
   font-size: 1.1em;
+  transition: all 200ms;
+}
+.btn:active {
+  transform: scale(0.9);
 }
 .btn-vender {
   background-color: #3FC2AB;
@@ -84,6 +88,11 @@ main {
   overflow: hidden;
   height: 200px;
   aspect-ratio: 5 / 6;
+  display: flex;
+  align-items: center;
+}
+.img-produto img {
+  width: 100%;
 }
 .detalhes .meta {
   display: grid;
@@ -103,6 +112,7 @@ main {
   gap: .5em;
 }
 .meta .atributo {
+  color: #454A4E;
   font-size: 1.1em;
   border-bottom: 2px solid #3FC2AB;
   padding-bottom: 4px;
