@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header carrinho" "detalhes carrinho";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 80px 2fr;
+}
+header{
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  background-color: #EFEFEF;
+}
+.logo {
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: 8px solid rgba(0, 0, 0, 0.05);
+  border-radius: .5em;
+}
+.carrinho {
+  grid-area: carrinho;
+  background-color: #454A4E;
+  color: white;
+  position: relative;
+}
+.carrinho h1 {
+  height: 80px;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 0 10px 0 black;
+}
+.carrinho h3 {
+  font-weight: normal;
+}
+.carrinho hr {
+  margin: 0 1.5em;
+}
+.produto, .desconto, .total {
+  margin: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.total {
+  font-weight: bold;
+}
+.btn {
+  cursor: pointer;
+  padding: 1em 0;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 200ms;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.btn-vender {
+  background-color: #3FC2AB;
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+  right: 2em;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detalhes {
+  display: flex;
+  max-width: 75%;
+  min-width: 300px;
+  gap: 1em;
+}
+.detalhes .img-produto {
+  border: 1px solid black;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 200px;
+  aspect-ratio: 5 / 6;
+  display: flex;
+  align-items: center;
+}
+.img-produto img {
+  width: 100%;
+}
+.detalhes .meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "codigo codigo"
+                       "nome nome"
+                       "marca valor"
+                       "tamanho quant";
+  row-gap: 1em;
+  column-gap: 1em;
+}
+.meta .campo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5em;
+}
+.meta .atributo {
+  color: #454A4E;
+  font-size: 1.1em;
+  border-bottom: 2px solid #3FC2AB;
+  padding-bottom: 4px;
+}
+.campo:nth-of-type(1) {grid-area: codigo;}
+.campo:nth-of-type(2) {grid-area: nome;}
+.campo:nth-of-type(3) {grid-area: marca;}
+.campo:nth-of-type(4) {grid-area: valor;}
+.campo:nth-of-type(5) {grid-area: tamanho;}
+.campo:nth-of-type(6) {grid-area: quant;}
+.tamanho {
+  display: flex;
+  gap: .5em;
+}
+.tamanho button {
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: #D9D9D9;
+  padding: 5px 8px;
+}
+.tamanho button:last-of-type {
+  padding: 5px 3px;
+}
+.btn-cancelar {
+  background-color: #B02E2E;
+  border-radius: .8em;
+  padding: .5em 2em;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}

@@ -5,13 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CMV - Venda</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/venda.css">
 </head>
 
 <body>
@@ -19,6 +13,68 @@
     <h1>Produtos</h1>
     <img src="assets/logo.svg" alt="Logo CMV" class="logo">
   </header>
+  <main>
+    <div class="detalhes">
+      <div class="img-produto">
+        <img src="https://s3-alpha-sig.figma.com/img/d299/533f/d0606bf6b28c6c93bfe7d913eeb67480?Expires=1695600000&Signature=oXmt9yLNdSytoQz8viY6q8Wx6IZFabBDxqqM08RK1Pa2Bo1V~iHGW2Lv29LLfbj0a3VXJMBSlyi~H9RzTEpVC72wdKpNnMmxIuGlECDmx~e-FQgiU13~C639G4kTcQJtlFt8mLnlO~sfWztzdYhlmPALDaGhSjf80gn~VD9bum7cmE0AeGWFxMqtJZJWVRp0XBLxLn8C-NsgxwiJPSAo4j4yJjfO4qF9vCwudixG9LcGXMd241SzLLHXIJn4~8-V-OttIYjvZFn3yEmyxO0H8ALv45F8U4518vMK7nbQ8wulqZkK0Zm8epvBfMVO~ZT6NoWZfLkb26Rkm35Z7kB8Rg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Imagem do produto">
+      </div>
+      <div class="meta">
+        <div class="campo">
+          <span class="atributo">Código</span>
+          <span id="codigo">002</span>
+        </div>
+        <div class="campo">
+          <span class="atributo">Nome</span>
+          <span id="nome">Camiseta Masculina Azul Manga Curta</span>
+        </div>
+        <div class="campo">
+          <span class="atributo">Marca</span>
+          <span id="marca">CMV</span>
+        </div>
+        <div class="campo">
+          <span class="atributo">Valor</span>
+          <span id="marca">49,99</span>
+        </div>
+        <div class="campo">
+          <span class="atributo">Tamanho</span>
+          <span class="tamanho">
+            <button>P</button>
+            <button>M</button>
+            <button>G</button>
+            <button>GG</button>
+          </span>
+        </div>
+        <div class="campo">
+          <span class="atributo">Quantidade</span>
+          <span id="quantidade">02</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-cancelar">
+      Cancelar
+    </button>
+  </main>
+  <section class="carrinho">
+    <h1>Carrinho</h1>
+    <div class="produto">
+      <span class="nome">Camiseta Masculina Azul M...</span>
+      <span class="quantidade"> x 2</span>
+      <span class="preco">99,98</span>
+    </div>
+    <hr>
+    <div class="desconto">
+      <span>Descontos</span>
+      <span class="valor-desconto">28,98</span>
+    </div>
+    <hr>
+    <div class="total">
+      <span>Valor final</span>
+      <span class="valor-desconto">71,00</span>
+    </div>
+    <button class="btn btn-vender">
+      Finalizar venda
+    </button>
+  </section>
 </body>
 
 </html>

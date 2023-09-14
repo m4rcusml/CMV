@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMV - Alterar</title>
+  <link rel="stylesheet" href="assets/alterar.css">
+</head>
+<body>
+  <header>
+    <h1>Alterar</h1>
+    <img src="assets/logo.svg" alt="Logo CMV" class="logo">
+  </header>
+  <main>
+    <form action="" method="post">
+      <div class="insert-img">
+        <img src="https://s3-alpha-sig.figma.com/img/d299/533f/d0606bf6b28c6c93bfe7d913eeb67480?Expires=1695600000&Signature=oXmt9yLNdSytoQz8viY6q8Wx6IZFabBDxqqM08RK1Pa2Bo1V~iHGW2Lv29LLfbj0a3VXJMBSlyi~H9RzTEpVC72wdKpNnMmxIuGlECDmx~e-FQgiU13~C639G4kTcQJtlFt8mLnlO~sfWztzdYhlmPALDaGhSjf80gn~VD9bum7cmE0AeGWFxMqtJZJWVRp0XBLxLn8C-NsgxwiJPSAo4j4yJjfO4qF9vCwudixG9LcGXMd241SzLLHXIJn4~8-V-OttIYjvZFn3yEmyxO0H8ALv45F8U4518vMK7nbQ8wulqZkK0Zm8epvBfMVO~ZT6NoWZfLkb26Rkm35Z7kB8Rg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+      </div>
+      <div class="resto">
+        <div class="campo">
+          <span class="atributo">Nome</span>
+          <input type="text" name="" id="" value="Camiseta Masculina Azul Manga Curta">
+        </div>
+        <div class="campo">
+          <span class="atributo">Marca</span>
+          <input type="text" name="" id="" value="CMV">
+        </div>
+        <div class="campo">
+          <span class="atributo">Valor</span>
+          <input type="text" name="" id="" value="49,99">
+        </div>
+        <div class="campo">
+          <span class="atributo">Tamanho</span>
+          <span class="tamanho">
+            <div>
+              <input type="checkbox" name="" id="p" checked>
+              <label for="p">P</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="m" checked>
+              <label for="m">G</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="g" checked>
+              <label for="g">G</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="gg" checked>
+              <label for="gg">GG</label>
+            </div>
+          </span>
+        </div>
+        <div class="campo">
+          <span class="atributo">Quantidade</span>
+          <input type="number" name="" id="" value="4">
+        </div>
+      </div>
+    </form>
+      <div class="botoes">
+        <button type="button" class="btn btn-cancelar">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-alterar">
+          Concluir
+        </button>
+      </div>
+  </main>
+
+  <script>
+    document.querySelector('button.btn-alterar').onclick = () => {
+      document.querySelector('form').submit()
+    }
+  </script>
+</body>
+</html>
