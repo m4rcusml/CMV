@@ -133,3 +133,30 @@ form {
 .btn-cancelar {
   background-color: #E13554;
 }
+
+@media screen and (max-width:768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+  .resto {
+    display: flex;
+    flex-direction: column;
+  }
+  .botoes {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    padding: .5em 0;
+  }
+  .botoes .btn {
+    width: 90%;
+  }
+  .campo input {
+    width: calc(100% - .8em);
+  }
+}
